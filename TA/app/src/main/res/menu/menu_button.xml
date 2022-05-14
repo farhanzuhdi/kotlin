@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ItemGrafik"
+        android:icon="@drawable/dash"
+        android:title="Dashboard"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemRumah"
+        android:icon="@drawable/kader"
+        android:title="Kader"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemDesa"
+        android:icon="@drawable/desa"
+        android:title="Desa"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemPeringkat"
+        android:icon="@drawable/rank"
+        android:title="Peringkat"
+        app:showAsAction="always" />
+</menu>

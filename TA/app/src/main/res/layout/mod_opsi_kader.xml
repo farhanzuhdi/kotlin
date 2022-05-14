@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backop"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/rekap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_biru"
+        android:text="Rekap"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/ubah"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ubah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_kuning"
+        android:text="ubah"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hapus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rekap"
+        app:layout_constraintTop_toTopOf="@+id/rekap" />
+
+    <Button
+        android:id="@+id/hapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_merah"
+        android:text="hapus"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ubah"
+        app:layout_constraintTop_toTopOf="@+id/ubah" />
+
+    <TextView
+        android:id="@+id/tId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/tId"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/txX"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
